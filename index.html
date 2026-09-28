@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coppermind Automation</title>
+<style>
+  :root { --bg: #fbfaf8; --fg: #1d1d1b; --muted: #5f5f5a; --rule: #e2e0da; --link: #1f5fa8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --fg: #ecebe7; --muted: #a3a29c; --rule: #2e2e2b; --link: #8ab8ee; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; }
+  nav a { margin-right: 1rem; }
+  a { color: var(--link); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Coppermind Automation</h1>
+  <p class="sub">A personal automation for one teacher's own class materials.</p>
+  <nav><a href="#privacy">Privacy policy</a><a href="#terms">Terms of service</a></nav>
+
+  <p>Coppermind Automation is a private, single-user tool. Each afternoon it updates a
+  small set of Google Slides presentations that its owner created, so they show the
+  current week's class plan. It is not a public service: nobody else can sign up for it
+  or use it.</p>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p><strong>What it accesses.</strong> With the owner's permission, the app uses the
+  Google Slides API to read and edit specific presentations in the owner's own Google
+  account. It does not access Gmail, Contacts, Calendar, or any other Google data.</p>
+  <p><strong>What it stores.</strong> The app keeps its Google sign-in token on the owner's
+  private home server so it can run on a schedule. It does not copy or keep the contents of
+  any presentation after an update.</p>
+  <p><strong>Sharing.</strong> No data is sold, shared with third parties, or used for
+  advertising or analytics. The app's use of information received from Google APIs follows the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+  Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p><strong>Revoking access.</strong> Access can be removed at any time from
+  <a href="https://myaccount.google.com/connections">Google Account → Third-party apps
+  &amp; services</a>.</p>
+
+  <h2 id="terms">Terms of service</h2>
+  <p>This app is provided for its owner's personal use only. It is offered as-is, with no
+  warranty and no guarantee of availability. Nobody else is authorized to use it. These
+  terms may change without notice, and any change will be posted on this page.</p>
+
+  <footer>Last updated September 28, 2026.</footer>
+</main>
+</body>
+</html>
